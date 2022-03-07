@@ -41,12 +41,13 @@ for tag in tags:
 scrollElm = "oMwYe"
 actions = ActionChains(driver)
 
+time.sleep(2)
 for x in range(5):
 	try:
 		# element for the scroll follow modal. it might change in the future
 		oMwYe = driver.find_element_by_class_name(scrollElm)
 		actions.move_to_element(oMwYe).perform()
-		time.sleep(.2)
+		time.sleep(1)
 	except:
   		print("users didn't load fast enough to scroll")
 
@@ -61,5 +62,6 @@ for element in elements:
 
 f.close()
 
+print(len(elements))
 # for tag in tags:
 # 	print(tag.get_attribute("class"))
