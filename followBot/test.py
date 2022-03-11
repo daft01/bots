@@ -1,6 +1,6 @@
 import psycopg2
 
-conn = psycopg2.connect("dbname=bot user=danielmorales")
+conn = psycopg2.connect("dbname=bot user=pi")
 cur = conn.cursor()
 
 sql = "INSERT INTO follow(username) VALUES('dafth01')"
